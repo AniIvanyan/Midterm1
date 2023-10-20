@@ -112,9 +112,9 @@ fun generateRandomValue(): Int {
 
 fun showToast(context: Context, score: Int) {
     val message = when (score) {
-        5 -> "You are very close! You've been awarded 5 points."
-        1 -> "You are close! You've been awarded 1 point."
-        else -> "You missed this time. No points awarded."
+        5 -> "Perfect your score is 5."
+        1 -> "Not bad your score is 3."
+        else -> "Try again to get closer."
     }
 
     Toast.makeText(context, message, Toast.LENGTH_SHORT).show()
